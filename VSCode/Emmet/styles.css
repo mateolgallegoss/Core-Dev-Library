@@ -1,0 +1,46 @@
+body {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #cc8f02;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10%;
+}
+
+.gradient {
+    background: linear-gradient(#000a, transparent 90%);
+}
+
+/* INTRODUCCIÓN DE LA PÁGINA - ENCABEZADO */
+
+.intro {
+    width: 99%;
+    height: 200px;
+    padding-bottom: 50px;
+    border: 3px transparent #fff;
+    margin: auto;
+}
+
+.saludo {
+    font-weight: 900;
+    font-size: 100px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 60px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.autor {
+    /*display: flex;*/
+    font-size: 20px;
+    margin: 8px 0 0 14px;
+}

@@ -1,0 +1,20 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.suo
+
+# PDF
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Dependencias (si usas Node en el futuro)
+node_modules/
+
+# Variables de entorno (¡nunca subir contraseñas!)
+.env

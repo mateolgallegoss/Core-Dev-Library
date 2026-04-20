@@ -11,9 +11,7 @@ Add badges to your Profile and Projects.
   - [List of Categories](#list-of-categories)
 - [Usage](#usage)
 - [Tips](#tips)
-  - [Contribution](#contribution)
-  - [Contact](#contact)
-  - [License](#license)
+- [Credits](#credits)
 - [Badges](#badges)
     - [🤖 Artificial Intelligence and Bots](#-artificial-intelligence-and-bots)
     - [🔗 Blockchain](#-blockchain)
@@ -66,9 +64,7 @@ Add badges to your Profile and Projects.
   - [List of Categories](#list-of-categories)
 - [Usage](#usage)
 - [Tips](#tips)
-  - [Contribution](#contribution)
-  - [Contact](#contact)
-  - [License](#license)
+- [Credits](#credits)
 - [Badges](#badges)
     - [🤖 Artificial Intelligence and Bots](#-artificial-intelligence-and-bots)
     - [🔗 Blockchain](#-blockchain)
@@ -125,7 +121,7 @@ To use a badge:
 
 # Tips
 
-<details> 
+<details>
 <summary>👇 How to use a different badge style</summary>
 <hr>
 
@@ -158,24 +154,15 @@ https://shields.io/badge/style-flat-green?logo=appveyor&style=flat
 <summary>👇 Use Ctrl + F or CMD + F to search</summary>
  <hr>
 
-> <strong>Tip:</strong> Since there are a lot of badges, to search for the particular badge you are looking for, use Ctrl + F and type the name you want. Thanks, @JakyeRU for mentioning this!
+> <strong>Tip:</strong> Since there are a lot of badges, to search for the particular badge you are looking for, use Ctrl + F and type the name you want.
 
 </details>
 
-## Contribution
-
-The project has a separate contribution file. Please adhere to the steps listed in the separate contributions [file](./CONTRIBUTING.md)
-
-## Contact
-
-You can reach me on [Twitter @ileriayooo](https://twitter.com/Ileriayooo)
-
-## License
-
-[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
-
 <hr>
 <hr>
+
+# Credits
+You can reach the autor on [Twitter @ileriayooo](https://twitter.com/Ileriayooo)
 
 # Badges
 

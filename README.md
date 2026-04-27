@@ -18,7 +18,7 @@ de programación: markup, frontend, backend y datos.
 
 - [📋 Contenido](#-contenido)
 - [🔧 Instalación de Git](#-instalación-de-git)
-  - [⚙️ Configuración inicial de Git](#️-configuración-inicial-de-git)
+  - [Configuración inicial de Git](#configuración-inicial-de-git)
 - [🐍 Instalación de Python](#-instalación-de-python)
 - [🟢 Instalación de Node.js](#-instalación-de-nodejs)
 - [💻 Instalación de Visual Studio Code](#-instalación-de-visual-studio-code)
@@ -83,7 +83,7 @@ git --version
 
 </details>
 
-### ⚙️ Configuración inicial de Git
+### Configuración inicial de Git
 
 Después de instalar, ejecuta esto una sola vez:
 

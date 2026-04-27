@@ -1,9 +1,10 @@
 <div align="center">
 
-# 📚 Core Dev Library
+<h1 style="font-size: 3.5rem; font-weight: 800; letter-spacing: -1px;">Core Dev Library</h1>
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![VSCode](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 
 Directorio de fundamentos, comandos y teoría de los principales lenguajes
@@ -15,13 +16,13 @@ de programación: markup, frontend, backend y datos.
 
 ## 📋 Contenido
 
-- [📚 Core Dev Library](#-core-dev-library)
-  - [📋 Contenido](#-contenido)
-  - [🔧 Instalación de Git](#-instalación-de-git)
-    - [⚙️ Configuración inicial de Git](#️-configuración-inicial-de-git)
-  - [🐍 Instalación de Python](#-instalación-de-python)
-  - [💻 Instalación de Visual Studio Code](#-instalación-de-visual-studio-code)
-  - [📄 Licencia](#-licencia)
+- [📋 Contenido](#-contenido)
+- [🔧 Instalación de Git](#-instalación-de-git)
+  - [⚙️ Configuración inicial de Git](#️-configuración-inicial-de-git)
+- [🐍 Instalación de Python](#-instalación-de-python)
+- [🟢 Instalación de Node.js](#-instalación-de-nodejs)
+- [💻 Instalación de Visual Studio Code](#-instalación-de-visual-studio-code)
+- [📄 Licencia](#-licencia)
 
 ---
 
@@ -153,6 +154,85 @@ python3 --version
 
 ---
 
+## 🟢 Instalación de Node.js
+
+Node.js es un entorno de ejecución de JavaScript en el servidor, ideal para construir aplicaciones web y APIs.
+
+<details>
+<summary>🪟 Windows</summary>
+
+**Opción A — Instalador oficial (recomendado):**
+1. Descarga el instalador LTS desde [nodejs.org](https://nodejs.org/)
+2. Ejecuta el instalador y sigue los pasos (deja todo por defecto)
+3. Verifica la instalación:
+
+```bash
+node --version
+npm --version
+```
+
+**Opción B — Con winget:**
+```bash
+winget install OpenJS.NodeJS.LTS
+```
+
+</details>
+
+<details>
+<summary>🍎 macOS</summary>
+
+**Opción A — Con Homebrew (recomendado):**
+```bash
+brew install node
+```
+
+**Opción B — Instalador oficial:**
+1. Descarga la versión LTS desde [nodejs.org](https://nodejs.org/)
+2. Sigue los pasos del instalador
+
+Verifica la instalación:
+```bash
+node --version
+npm --version
+```
+
+</details>
+
+<details>
+<summary>🐧 Linux</summary>
+
+**Ubuntu / Debian:**
+```bash
+sudo apt update
+sudo apt install nodejs npm
+```
+
+**Fedora:**
+```bash
+sudo dnf install nodejs
+```
+
+> 💡 **Recomendado:** Usa [nvm](https://github.com/nvm-sh/nvm) para gestionar múltiples versiones de Node.js fácilmente.
+
+```bash
+# Instalar nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# Instalar la versión LTS con nvm
+nvm install --lts
+nvm use --lts
+```
+
+Verifica la instalación:
+```bash
+node --version
+npm --version
+```
+
+</details>
+
+---
+
 ## 💻 Instalación de Visual Studio Code
 
 VS Code es un editor de código ligero, potente y altamente personalizable.
@@ -212,12 +292,12 @@ code --version
 ## 📄 Licencia
 
 Este contenido está bajo licencia [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es) —
-puedes usarlo y compartirlo siempre que des crédito a [NOMBRE DE LA EMPRESA].
+puedes usarlo y compartirlo siempre que des crédito a Misitox37.
 
 ---
 
 <div align="center">
 
-Hecho con ❤️ por [NOMBRE DE LA EMPRESA]
+Hecho con ❤️ por Misitox37
 
 </div>

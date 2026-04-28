@@ -2,10 +2,14 @@
 ### Vistazo al cuarto grande de la programación
 En sus inicios, JavaScript fue desarrollado por un empleado de Netscape, conocido como **Brendan Eich**. Actualmente, JavaScript es una marca registrada de Oracle Corporation, tras la adquisición en 2009 de **Sun Microsystems**. JavaScript es usada con licencia por los productos creados por **Netscape Communication** y Fundación Mozilla.
 
-## Definición
+## Definición y características
 Es un ***lenguaje de programación interpretado***, es decir, va a ir cargando partes del programa conforme se lo pida. Se lo define como un ***lenguaje orientado a objetos***, siendo su primer y pricipal uso hasta la fecha el desarrollo web. Es un lenguaje orientado a objetos gracias que se diseño con una sintaxis similar a **C++** y **Java**.
 
 En sí, JavaScript es un ***lenguaje imperativo***, ***débilmente tipado***, ***dinámico*** y varias veces ***basado en prototipos***. Con ***lenguaje basado en prototipos*** se refiere a una forma de POO (Programación orientada a objetos) en el cuál los objetos no son creados mediante la instanciación de clases, sino que aparecen por medio de la clonación de objetos. Este paradigma se originó con **Self** y ahora también está presente en JavaScript.
+
+Tiene funciones de primera clase. Además, posee un ***gc (garbage collector o en español recolector de basura)*** al igual que lenguajes como ***Python***, ***Java***, ***C#*** o ***Go***. Esto es un factor diferencial con respecto a **C++**, donde se usan ***punteros***.
+
+Se caracteriza por sus capacidades dinámicas como la contrucciión de objetos en tiempo de ejecución, listas de parámetros variables, variables de función, creación de scripts `eval`, introspección de objetos `for...in` y utilidades de `Object`, y recuperación de código fuente mediante `toString()`.
 
 Es un dialecto de **ECMAScript**. Implementado como parte del navegador, su uso principal aparece del lado del cliente, mejorando la interfaz de usuario y potenciando la creación de páginas webs dinámicas.
 

@@ -18,3 +18,6 @@ node_modules/
 
 # Variables de entorno (¡nunca subir contraseñas!)
 .env
+
+# Documentos específicos del proyecto
+styleguide.html

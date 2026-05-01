@@ -58,3 +58,17 @@ foo(); // "bar"
 function foo() {
     console.log("bar");
 }
+
+// NO PROTEGIDAS POR CONSTANTES
+// Propiedades de objetos
+
+const MY_OBJECT = { key: "value" };
+console.log(MY_OBJECT.key);
+MY_OBJECT.key = "otherValue";
+console.log(MY_OBJECT.key);
+
+// Contenido de arrays
+const MY_ARRAY = ["HTML", "CSS"];
+console.log(MY_ARRAY);
+MY_ARRAY.push("JAVASCRIPT");
+console.log(MY_ARRAY); // registra ['HTML','CSS','JAVASCRIPT'];

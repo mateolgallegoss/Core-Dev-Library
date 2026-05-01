@@ -42,6 +42,10 @@ var n = null;
 console.log(n * 32); // Registrará 0 en la consola
 ~~~
 
+### Ámbito de Bloque
+Las variables por ámbito de bloque, se limitan a un bloque entre llaves `{}`, siempre cuando se use `let` o `const`, puesto que var es una variable de ámbito local/global.
+Una variable por ámbito de bloque puede ser local cuando se limita al cuerpo de una función o si es privada a un módulo específico.
+
 ### Hoisting
 Algo inusual en la variables en JavaScript es la elevación de variables (`hoisting`), que consiste en que puedes hacer referencia a una variable declarada más tarde, sin obtener un excepción.
 
@@ -97,3 +101,110 @@ var baz = function () {
   console.log("bar2");
 };
 ~~~
+
+### Variables globales
+Son propiedades del objeto global. En las páginas web el objeto global es `window`. La forma de establecer y acceder a variables globales es utilizando la sintaxis `window.variable`.
+
+Puedes acceder a las variables globales de una ventana o marco desde otra ventana o marco especificando el nombre de la `window` o el `frame`. Por ejemplo, si declaras una variable llamada `phoneNumber` en un documento, desde un `iframe` puedes hacer referencia a esta como `parent.phoneNumber`.
+
+### Constantes
+Puedes crear una constante de solo lectura con nombre con la palabra clave `const` siendo una constante.
+
+La constante no puede cambiar el valor a través de la asignación o volver a declararla mientras ejecuta el script. Se debe iniciar a un valor que no se va a cambiar.
+~~~
+const PI = 3.14;
+~~~
+
+No se debe declarar una constante con el mismo nombre que una función o variable en el mismo ámbito de bloque, tal que así:
+~~~
+// AMBAS EXPRESIONES CAUSARÁN UN ERROR
+
+function f() {}
+const f = 5;
+
+function f() {
+  const g = 5;
+  var g;
+}
+~~~
+
+Sin embargo, hay dos cosas que no está protegidas por las constantes:
+1. Las propiedades asignadas a objetos.
+    ~~~
+    const MY_OBJECT = { key: "value" };
+    MY_OBJECT.key = "otherValue";
+    ~~~
+2. El contenido de arreglos.
+    ~~~
+    const MY_ARRAY = ["HTML", "CSS"];
+    MY_ARRAY.push("JAVASCRIPT");
+    console.log(MY_ARRAY); // registra ['HTML','CSS','JAVASCRIPT'];
+    ~~~
+
+# Estructuras y tipos de datos
+## Tipos de datos
+Existen 8 tipos de datos deifinidos en el último estándar ECMAScript.
+
+### Datos primitivos
+1. Booleano: `true` y `false`.
+2. null: una palabra clave que denota un valor nulo (`null` no es lo mismo que `Null` o `NULL`).
+3. undefined: propiedad de alto nivel cuyo valor no esta definido.
+4. Number: un número entero o un número con coma flotante, tales como `67` o `2.71828182`.
+5. BigInt: número entero con precisión arbitraria, por ejemplo el `903480170522n`.
+6. String: es una secuencia de caracteres que representan un valor de texto, por ejemplo "script".
+7. Symbol: Apareció con la versión ECMAScript 6. Es un tipo de dato cuyas instancias son únicas e inmutables. Permite evitar colisiones de nombres, al convertirse automáticamente a string.
+~~~
+// Crear un Symbol
+const id = Symbol("id");
+
+// Crear otro Symbol con la misma descripción
+const id2 = Symbol("id");
+
+console.log(id === id2); // false (son únicos)
+~~~
+### Object
+Son como contenedores con nombre para los valores, y las funciones como procedimientos que puedes programar en tu aplicación.
+
+## Conversión de tipos de datos
+JavaScript es un lenguaje tipado dinámicamente, significa que no debes especificar el tipo de dato de una variable cuando la declaras. También significa que los tipos de datos se convierten automáticamente según sea necesario durante la ejecución del script.
+
+Así, estoy permite redefinir una variable con un nuevo tipo de dato, sin generar un mensaje de error.
+~~~
+var answer = 37;
+answer = "Para configurar tus snippets...";
+~~~
+
+## Números y el operador '+'
+El uso de valores numéricos y de cadena con el operador `+` convierte los valroes numéricos en cadenas. A este proceso  se lo conoce como concatenación, aquí unos ejemplos:
+~~~
+x = "La respuesta es " + 37;  //"La respuesta es 37"
+y = 37 + " es la respuesta";  //"37 es la respuesta"
+z = "37" + 505;  //"37505"
+~~~
+Para el resto de operadores, los valores numéricos no se convierten a cadenas. Por ejemplo:
+~~~
+console.log("37" - 7);
+console.log("37" * 2.71828182);
+console.log("37" / 3.14159265);
+console.log("37" % 5);
+console.log("37" ** 2);
+~~~
+### Convertir texto a números 
+Si un un valor númerico está en memoria como texto, existen tres métodos para realizar la conversión:
+1. `parseInt()`. Solo devuelve números enteros. ***Se recomienda usar el parámetro `radix` para especificar el sistema numérico que se utilizará.***
+    **`Radix`**:
+    ~~~
+    parseInt("101", 2); // 5
+    ~~~
+2. `parseFloat()`. Devuelve enteros y décimales.
+3. Usar el operador `+`(más unario) en ambos términos, así haremos una desconcatenación:
+    ~~~
+    "1.1" + "1.1"; // '1.11.1'
+
+    (+"1.1") + (+"1.1"); // 2.2
+    +"1.1" + +"1.1"; // 2.2
+    ~~~
+
+# Literales
+Los literales representan valores en JavaScript, los cuales pueden ser valores fijos, no variables, que literalmente proporcionas en tu script. Esta sección describe los siguientes tipos de literales:
+<src></src>

@@ -207,4 +207,28 @@ Si un un valor númerico está en memoria como texto, existen tres métodos para
 
 # Literales
 Los literales representan valores en JavaScript, los cuales pueden ser valores fijos, no variables, que literalmente proporcionas en tu script. Esta sección describe los siguientes tipos de literales:
-<src></src>
+- [Arreglos literales](#literales-1)
+- [Booleanos literales](#literales-2)
+- [Literales de coma flotante](#literales-3)
+- [Literales numéricos](#literales-4)
+- [Objetos literales](#literales-5)
+- [RegExp literales](#literales-6)
+- [Cadenas literales](#literales-7)
+
+## Arreglos literales {#literales-1}
+Es una lista de cero o más expresiones, con cada una presente como un elemento del arreglo. Se delimita entre corchetes (`[]`) y su `length` se establece en el número de argumentos especificado. Por ejemplo:
+~~~
+let favSongs = ["Stay here 4 life", "911/Mr.Lonely", "Jigsaw Falling into Place", "No TRESPASSING"];
+~~~
+
+## Booleanos literales {#literales-2}
+
+## Literales de coma flotante {#literales-3}
+
+## Literales numéricos {#literales-4}
+
+## Objetos literales {#literales-5}
+
+## RegExp literales {#literales-6}
+
+## Cadenas literales {#literales-7}
